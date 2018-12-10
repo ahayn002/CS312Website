@@ -1,0 +1,32 @@
+﻿@page
+@model StatisticsModel
+@{
+    ViewData["Title"] = "Death Penalty Statistics";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@Model.Message</h3>
+
+<p>If you want to see if the death penalty is allowed in your state, check out <a href="https://deathpenaltyinfo.org/state_by_state">the State-by-State Database</a>, provided by the Death Penalty Information Center.</p>
+<ul>
+    <h4>The Totals</h4>
+    <li>
+        Since the current-era of execution policies began in 1976, there have been 1488 executions. There was a gradual increase till executions peaked in 1999, with 98 executions being carried out. After this peak, executions gradually decreased until 2016, where they dropped to 20. Since then, totals have hovered around 20-25 annually.
+    </li>
+    <h4>Racial Distribution</h4>
+    <li>
+        As if the death penalty isn’t controversial enough, let’s bring race into. Nearly 56% of defendants executed are white. Roughly 34% are black. The remaining 10% are other minorities. Looking at victims, roughly 50% of murder victims are white. However, over 75% of death penalty sentences involved a white murder victim. Apparently, the lesson learned here is that if you’re going to murder someone, you should try to make sure they’re not a white person. Also, don’t murder someone.
+    </li>
+    <h4>Near Misses</h4>
+    <li>
+        Since 1973, there have been 164 inmates on death row that have been exonerated from their crimes as new evidence has surfaced.
+    </li>
+    <h4>Weapon of Choice</h4>
+    <li>
+        Of the 1488 executions committed, 1311 have been from lethal injection. Electruction accounts for 160, gas chambers composed 11, 3 from hanging, and 3 from firing squad.
+    </li>
+    <h4>Don't Forget the Women and Children</h4>
+    <li>
+        Currently, 53 women sit on death row. Sixteen women have been executed since 1976. There have been 22 executions as a result of crimes committed as juveniles. However, Roper v. Simmons ended the death penalty for children in 2005
+    </li>
+</ul>
+

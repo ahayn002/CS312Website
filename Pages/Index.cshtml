@@ -1,0 +1,102 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/images/question.svg" alt="Wikipedia Image" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    In case you feel like this site doesn't adequately satisfy your demand for background knowledge, I've linked the Wiki entry on Capital Punishment.
+                    <br />
+                    <br /> 
+                    <a class="btn btn-default" href="https://en.wikipedia.org/wiki/Capital_punishment">
+                        Open Wikipedia
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/guns.svg" alt="Guns Image" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    The link between Capital Punishment, Gun Ownership, and Homicide rates.
+                    <br />
+                    <br />
+                    <a class="btn btn-default" href="https://www.jstor.org/stable/2778028?seq=1#page_scan_tab_contents">
+                        Journal Article
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/news.svg" alt="News Image" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Having an urge to check up on the most recent executions?
+                    <br />
+                    <br />
+                    <a class="btn btn-default" href="https://deathpenaltyinfo.org/execution-list-2018">
+                        Click here
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <h2>What's this page about?</h2>
+        <ul class="well">
+            The death penalty is a touchy subject that divides this country in many ways. 
+            Everyone thinks they have the perfect idea as to how it should be handled. 
+            Well, you heard it here first – they’re all wrong. I’m hear to tell you what’s right.
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2><a asp-page="/Statistics">Statistics</a></h2>
+        <br />
+        <ul class="well">
+            The numbers never lie. They're just misrepresented to help prove a narrative. Or maybe
+            they're presented honestly. Probably not though. If you're curious to see which numbers
+            I use to paint my picture, head over to the
+            <a asp-page="/Statistics">Statistics</a> page.
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2><a asp-page="/Policies">Current Policies</a></h2>
+        <br />
+        <ul class="well">
+            It's hard to know what to do if you don't know what's going on. If you need to brush
+            up on current state policies and what happened in the past to get us here, head over to the
+            <a asp-page="/Policies">Policies</a>
+            section.
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2><a asp-page="/Solution">The Solution</a></h2>
+        <br />
+        <ul class="well">
+            Go on over to the
+            <a asp-page="/Solution">Solution</a> page if you're curious to see my proposal
+            on how to fix this deadly problem we have going on.
+        </ul>
+    </div>
+</div>
